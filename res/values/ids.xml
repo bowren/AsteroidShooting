@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="radiogroup1"/>
+    <item type="id" name="rbtouchscreen"/>
+    <item type="id" name="rbkeyboard"/>
+    <item type="id" name="textleft"/>
+    <item type="id" name="textright"/>
+    <item name="textkeycontrols" type="id"/>
+    <item type="id" name="buttonleft"/>
+    <item type="id" name="buttonright"/>
+    <item type="id" name="linearlayout1"/>
+    <item type="id" name="textfire"/>
+    <item type="id" name="buttonfire"/>
+    <item name="gamedescription" type="id"/>
+    <item name="textup" type="id"/>
+    <item name="buttonup" type="id"/>
+    <item name="buttondown" type="id"/>
+    <item name="textdown" type="id"/>
+    <item name="highscore" type="id"/>
+    
+</resources>

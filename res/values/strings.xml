@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AsteroidsActivity!</string>
+    <string name="app_name">Asteroids</string>
+    <string name="title">Asteroids</string>
+    <string name="begin">Start</string>
+    <string name="opts">Options</string>
+    <string name="quit">Exit</string>
+    <string name="controls">Controls</string>
+    <string name="touchscreen">Touch Screen</string>
+    <string name="keyboard">Keyboard</string>
+    <string name="controlsforkeyboard">Controls for keyboard</string>
+    <string name="left">Left:</string>
+    <string name="right">Right:</string>
+    <string name="fire">Fire:</string>
+    <string name="change">Change</string>
+    <string name="description">The objective of Asteroids is to shoot as many asteroids as you can without losing three ships. If you are using touchscreen controls, the red button is for firing, and the joystick is for turnning and thrusting around. If you are using the keyboard you can set your controls, the defaults are A turn left, D turn right, W thrust forward, S thrust backward, and Space for fire. The points per asteroid vary on size:</string>
+    <string name="onepoint">1 Point</string>
+    <string name="twopoint">2 Points</string>
+    <string name="threepoint">3 Points</string>
+    <string name="up">Up:</string>
+    <string name="down">Down:</string>
+    <string name="credits">Credits</string>
+    <string name="creditsstring">Thanks to Jasper den Ouden for the Asteroid image.\nThanks to Dravenx for the Space ship image.\nThanks to Marvin for the shooting sound.\nThe font used in game is GNU Free Mono licensed under GPLv3 available at http://gnu.org/licenses/gpl.html\nAuthor: Joshua Bowren.</string>
+
+</resources>
