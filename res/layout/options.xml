@@ -195,14 +195,17 @@
 	         android:textColor="@color/green" >
 	     </TextView>
       </FrameLayout>
-
-      <TextView
+	  <ScrollView
           android:id="@+id/tab4"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent" >
+      <TextView
+          android:id="@+id/textViewCredits"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="@string/creditsstring"
           android:textAppearance="?android:attr/textAppearanceLarge" />
-
+	  </ScrollView>
     </FrameLayout>
   </LinearLayout>
 </TabHost>

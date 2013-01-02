@@ -2,7 +2,7 @@
 <resources>
 
     <string name="hello">Hello World, AsteroidsActivity!</string>
-    <string name="app_name">Asteroids</string>
+    <string name="app_name">AsteroidShooting</string>
     <string name="title">Asteroids</string>
     <string name="begin">Start</string>
     <string name="opts">Options</string>
