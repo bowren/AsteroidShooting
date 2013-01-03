@@ -1,4 +1,6 @@
-/* This file is part of AsteroidShooting.
+/* Copyright (C) 2012 Joshua Bowren
+
+This file is part of AsteroidShooting.
 
 AsteroidShooting is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
