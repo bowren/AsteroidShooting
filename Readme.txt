@@ -10,3 +10,31 @@ Thanks to Marvin for the shooting sound.
 The font used in game is GNU Free Mono licensed under GPLv3 available at http://gnu.org/licenses/gpl.html
 
 Author: Joshua Bowren
+
+Building
+========
+Run:
+
+android update project -p . -t n
+
+Where n is the target android version you want to use, use android list targets to view all targets. Use 7 for android 4.2.2
+
+Then run:
+
+ant debug
+
+or
+
+ant release
+
+This builds an android package. Debug makes the installation easier as you do not need to sign the application.
+
+To install to your device run
+
+ant installd
+
+or
+
+ant installr
+
+d for debug and r for release.

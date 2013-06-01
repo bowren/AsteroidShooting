@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DispararAsteroides</string>
+    <string name="title">DispararAsteroides</string>
+    <string name="begin">Inciar</string>
+    <string name="opts">Opciónes</string>
+    <string name="quit">Salir</string>
+    <string name="controls">Controles</string>
+    <string name="howtoplay">Como jugar</string>
+    <string name="highscore">Mejor puntaje</string>
+    <string name="highscoredisplay">Mejor puntaje:</string>
+    <string name="highscorenone">No puntaje alto disponible todavia</string>
+    <string name="credits">Creditos</string>
+    <string name="touchscreen">Pantalla Tacto</string>
+    <string name="keyboard">Teclado</string>
+    <string name="controlsforkeyboard">Controles para teclado</string>
+    <string name="left">Izequierda:</string>
+    <string name="right">Derecho:</string>
+    <string name="fire">Disparar:</string>
+    <string name="change">Cambiar</string>
+    <string name="description">El objetivo del juego es de disparar los asteroids que más puedas disparar sin perder tres buques. Si está usando controles de la pantalla tacto, el botón rojo es para disparar, y el joystick es para hacer girar y empujar bruscamente. Si está usando el teclado puede poner su controles, los predeterminados son A: girar izquierda, D: girar derecho, W: empujar adelante, S: empujar detras, y disparar para disparar. Los puntos de un asteroid varia de tamaño:</string>
+    <string name="onepoint">1 Punto</string>
+    <string name="twopoint">2 Puntos</string>
+    <string name="threepoint">3 Puntos</string>
+    <string name="up">Arriba:</string>
+    <string name="down">Abajo:</string>
+    <string name="creditsstring">Gracias a Jasper den Ouden por la imagen del Asteroide.\nGracias a Dravenx por la imagen del buque.\nGracias a Marvin por el sonido de disparar.\nLa fuente usado en el juego es GNU Free Mono licenciado abajo de GPLv3 disponible en http://gnu.org/licenses/gpl.html\nAutor: Joshua Bowren.</string>
+	<string name="newkey">Tecla nueva</string>
+	<string name="presskey">Ponga una tecla: </string>
+	<string name="postive">Bueno</string>
+	<string name="negative">Cancelar</string>
+	<string name="version">Versión 1.5</string>
+	
+	<!-- In game strings -->
+	
+	<string name="initialscore">PUNTOS 0</string>
+	<string name="initiallevel">NIVEL 1</string>
+	<string name="score">PUNTOS </string>
+	<string name="level">NIVEL </string>
+	<string name="high">MEJOR </string>
+	<string name="gameover">JUEGO TERMINADO</string>
+	
+	<!-- Error strings -->
+	
+	<string name="keyboarderror">Error de preferencia de Teclado</string>
+    
+</resources>

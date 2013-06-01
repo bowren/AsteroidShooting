@@ -74,7 +74,7 @@ public class GameRenderer implements Renderer
 		astman = new AsteroidManager(indexBuffer, texman);
 		cHandler = new CollisionHandler(context, player, astman.getAsteroids(), player.getBullets(), astman.getAsteroidPool(), player.getBulletPool());
 		inman = new InputManager(indexBuffer, texman, dm.widthPixels, dm.heightPixels, context);
-		textManager = new TextManager(textRend, ratio);
+		textManager = new TextManager(textRend, context, ratio);
 		
 		lastTime = SystemClock.uptimeMillis();
 	}

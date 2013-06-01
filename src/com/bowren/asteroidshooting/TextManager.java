@@ -21,28 +21,32 @@ import android.opengl.GLES11;
 
 public class TextManager 
 {
+	private AsteroidsActivity context;
 	private TextRenderer textRend;
 	private Text Score;
 	private Text Level;
 	private Text Lose;
 	private Text highScore;
+	private String loseString;
 	
-	public TextManager(TextRenderer tr, float ratio)
+	public TextManager(TextRenderer tr, AsteroidsActivity aa, float ratio)
 	{
+		context = aa;
 		textRend = tr;
-		Score = new Text("SCORE 0", ratio * -0.55f, 1.65f, 0.35f, 0.35f);
-		Level = new Text("LEVEL 1", ratio * -2, 1.65f, 0.35f, 0.35f);
-		Lose = new Text("", 0 - ((7.5f * 0.35f) / 2), 0 - (0.35f / 2), 0.35f, 0.35f);
-		highScore = new Text("HIGH ", ratio * -0.55f, 1.3f, 0.35f, 0.35f);
+		Score = new Text(context.getString(R.string.initialscore), ratio * -0.55f, 1.65f, 0.35f, 0.35f);
+		Level = new Text(context.getString(R.string.initiallevel), ratio * -2, 1.65f, 0.35f, 0.35f);
+		loseString = context.getString(R.string.gameover);
+		Lose = new Text("", 0.0f - ((loseString.length() * (0.35f / 1.25f)) / 2.0f), 0.0f - (0.35f / 2.0f), 0.35f, 0.35f);
+		highScore = new Text(context.getString(R.string.high), ratio * -0.55f, 1.3f, 0.35f, 0.35f);
 	}
 	
 	public void Update(int points, int level, float lives, int hScore)
 	{
-		Score.text = "SCORE " + String.valueOf(points);
-		Level.text = "LEVEL " + String.valueOf(level);
-		highScore.text = "HIGH " + String.valueOf(hScore);
+		Score.text = context.getString(R.string.score) + String.valueOf(points);
+		Level.text = context.getString(R.string.level) + String.valueOf(level);
+		highScore.text = context.getString(R.string.high) + String.valueOf(hScore);
 		if (lives <= 0)
-			Lose.setText("GAME OVER");
+			Lose.setText(loseString);
 		else
 			Lose.setText("");
 	}

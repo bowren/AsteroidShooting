@@ -97,22 +97,22 @@ public class OptionsActivity extends Activity
         TabHost.TabSpec spec = tabs.newTabSpec("tag1");
         
         spec.setContent(R.id.tab1);
-        spec.setIndicator("Controls");
+        spec.setIndicator(getString(R.string.controls));
         tabs.addTab(spec);
         
         spec = tabs.newTabSpec("tag2");
         spec.setContent(R.id.tab2);
-        spec.setIndicator("How to play");
+        spec.setIndicator(getString(R.string.howtoplay));
         tabs.addTab(spec);
         
         spec = tabs.newTabSpec("tag3");
         spec.setContent(R.id.tab3);
-        spec.setIndicator("High Score");
+        spec.setIndicator(getString(R.string.highscore));
         tabs.addTab(spec);
         
         spec = tabs.newTabSpec("tag4");
         spec.setContent(R.id.tab4);
-        spec.setIndicator("Credits");
+        spec.setIndicator(getString(R.string.credits));
         tabs.addTab(spec);
         
         changeup = (Button)findViewById(R.id.buttonup);
@@ -187,7 +187,7 @@ public class OptionsActivity extends Activity
 			}
 			catch (Exception e)
 			{
-				Toast.makeText(this, "Keyboard preference error.", Toast.LENGTH_LONG).show();
+				Toast.makeText(this, getString(R.string.keyboarderror), Toast.LENGTH_LONG).show();
 			}
 			upkey = " " + KEYS[upkeycode - 1];
 			downkey = " " + KEYS[downkeycode - 1];
@@ -199,9 +199,9 @@ public class OptionsActivity extends Activity
 		highScoreView = (TextView)findViewById(R.id.highscore);
 		
 		if (highScoreString != null)
-			highScoreView.setText("High Score:" + highScoreString);
+			highScoreView.setText(getString(R.string.highscoredisplay) + highScoreString);
 		else
-			highScoreView.setText("No High Score Available Yet");
+			highScoreView.setText(getString(R.string.highscorenone));
         
         changeup.setOnClickListener(uplistener);
         changedown.setOnClickListener(downlistener);
@@ -255,10 +255,10 @@ public class OptionsActivity extends Activity
 	{
 		AlertDialog keydialog = new AlertDialog.Builder(this).create();
 		keydialog.setOnKeyListener(keylistener);
-		keydialog.setTitle("New Key");
-		keydialog.setMessage("Press a key: ");
-		keydialog.setButton(AlertDialog.BUTTON_POSITIVE, "Ok", oklistener);
-		keydialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Cancel", cancellistener);
+		keydialog.setTitle(getString(R.string.newkey));
+		keydialog.setMessage(getString(R.string.presskey));
+		keydialog.setButton(AlertDialog.BUTTON_POSITIVE, getString(R.string.postive), oklistener);
+		keydialog.setButton(AlertDialog.BUTTON_NEGATIVE, getString(R.string.negative), cancellistener);
 		keydialog.show();
 		keydialog.takeKeyEvents(true);
 	}
@@ -369,7 +369,7 @@ public class OptionsActivity extends Activity
 			if (event.getAction() == KeyEvent.ACTION_DOWN)
 			{
 				currentKeycode = keyCode;
-				((AlertDialog)dialog).setMessage("Press a key: " + KEYS[currentKeycode - 1]);
+				((AlertDialog)dialog).setMessage(getString(R.string.presskey) + KEYS[currentKeycode - 1]);
 			}
 			return false;
 		}
