@@ -17,12 +17,12 @@ along with AsteroidShooting.  If not, see <http://www.gnu.org/licenses/>. */
 
 package com.bowren.asteroidshooting;
 
+import java.lang.Math;
 import java.nio.ShortBuffer;
 import java.util.Iterator;
 import java.util.LinkedList;
 import android.opengl.GLES11;
 import android.os.SystemClock;
-import android.util.FloatMath;
 
 public class Ship extends Entity implements ParticleEmitter
 {
@@ -58,15 +58,16 @@ public class Ship extends Entity implements ParticleEmitter
 	public Ship(ShortBuffer ib, TextureManager t, TextRenderer tr, AsteroidsActivity c, float aspectRatio) 
 	{
 		super(ib, t);
+		context = c;
+		textRend = tr;
 		bullets = new LinkedList<Bullet>();
 		bulletPool = new BulletPool(indexBuffer, tm, MAX_BULLETS);
 		explosion = new Animation(Animation.EXPLOSION, tm);
 		thrust = new Animation(Animation.THRUST, tm);
 		Accel = new Vector2D(0, 0);
 		livesPos = new Vector2D(aspectRatio * 1.25f, 1.65f);
-		wait = new Text("WAITING FOR ASTEROIDS TO CLEAR", 0 - ((24 * 0.25f) / 2), 0.25f, 0.25f, 0.25f);
-		context = c;
-		textRend = tr;
+		String waitString = context.getString(R.string.wait);
+		wait = new Text(waitString, 0 - ((waitString.length() * (0.25f / 1.25f)) / 2.0f), 0.25f, 0.25f, 0.25f);
 		width = 0.8f;
 		height = 0.8f;
 		vecPos.x = 0 - (width / 2);
@@ -79,8 +80,8 @@ public class Ship extends Entity implements ParticleEmitter
 	{
 		if (state == DEAD || state == EXPLODING)
 			return;
-		velocityX = FloatMath.cos((angle + 270) * Utils.DEG_TO_RAD);//r*cos(theta)
-		velocityY = FloatMath.sin((angle + 270) * Utils.DEG_TO_RAD);//r*sin(theta)
+		velocityX = (float)Math.cos((angle + 270) * Utils.DEG_TO_RAD);//r*cos(theta)
+		velocityY = (float)Math.sin((angle + 270) * Utils.DEG_TO_RAD);//r*sin(theta)
 
 		if (inputStates.moveLeft)
 			angle += SHIP_ROTATE_SPEED * deltaTime;

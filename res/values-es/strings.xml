@@ -30,7 +30,7 @@
 	<string name="presskey">Ponga una tecla: </string>
 	<string name="postive">Bueno</string>
 	<string name="negative">Cancelar</string>
-	<string name="version">Versión 1.5</string>
+	<string name="version">Versión 1.51</string>
 	
 	<!-- In game strings -->
 	
@@ -39,6 +39,7 @@
 	<string name="score">PUNTOS </string>
 	<string name="level">NIVEL </string>
 	<string name="high">MEJOR </string>
+	<string name="wait">ESPERA POR LOS ASTEROIDES</string>
 	<string name="gameover">JUEGO TERMINADO</string>
 	
 	<!-- Error strings -->
