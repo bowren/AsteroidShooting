@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bowren.asteroidshooting"
-    android:versionCode="4"
-    android:versionName="1.51" >
+    android:versionCode="5"
+    android:versionName="1.6" >
 
     <uses-sdk android:minSdkVersion="10"
-    		  android:targetSdkVersion="17"/>
+    		  android:targetSdkVersion="19"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     
     <application
