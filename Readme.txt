@@ -17,7 +17,7 @@ Run:
 
 android update project -p . -t n
 
-Where n is the target android version you want to use, use android list targets to view all targets. Use 7 for android 4.2.2
+Where n is the target android version you want to use, use android list targets to view all targets. Use 21 for android 4.4
 
 Then run:
 
